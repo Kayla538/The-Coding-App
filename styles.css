@@ -1,0 +1,105 @@
+/* Existing CSS code */
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: limegreen;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo .letter {
+    font-size: 60px; /* Adjust font size as needed */
+    color: limegreen;
+}
+
+.container {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.textbox {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid rgba(15, 15, 153, 0.311);
+    border-radius: 5px;
+    background-color: black;
+    color: limegreen;
+    font-size: 16px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(13, 13, 138, 0.476);
+    color: limegreen;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    color: limegreen;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* New code for responsive design */
+
+/* For small devices like smartphones */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+    .logo .letter {
+        font-size: 40px; /* Adjust logo font size for small screens */
+    }
+
+    .container {
+        width: 90%; /* Adjust container width for small screens */
+    }
+
+    .textbox {
+        width: 90%; /* Adjust textbox width for small screens */
+    }
+
+    .button {
+        width: 90%; /* Adjust button width for small screens */
+    }
+}
+
+/* For medium devices like tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Adjust styles for medium screens here */
+}
+
+/* For large devices like PCs */
+@media (min-width: 992px) {
+    /* Adjust styles for large screens here */
+}
